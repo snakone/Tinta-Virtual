@@ -6,21 +6,184 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+ /* Social Media Buttons */
+ 
+ .fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:5px;
+}
+ 
+ .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.inline {
+	column-count:1;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:-25px;
+
+}
+ 
+/* Background color for Parallax img */
+
+.bgcolor {
+	
+	background-color: rgba(0, 0, 0, 0.3);
+	padding-bottom:8px;
+	border-radius:4px;
+	font-weight:bold;
+} 
+
+ 
+/* Button Begin */
+
+.begin:hover {
+	
+	transition: font-size 1s;
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+.no-padding-top {
+	
+	padding-top:0;
+}
+
+.icon-block .material-icons:hover {
+	color:#64ffda;
+	cursor:pointer;
+	
+} 
+
+.margin{
+	
+	padding-left:50px;
+}
+
+/* Right Fixed Nav */
+
+.right-nav {
+	
+background-color: rgba(0, 0, 0, 0.3);
+min-height:1000px;
+
+}
+
+ /*Custom Fonts*/
+
+ @font-face {
+  font-family: Indesign;
+  src: url(fonts/Indesign.ttf);
+  font-weight: bold;
+
+}
+
+@font-face {
+  font-family: TradeMark;
+  src: url(fonts/TradeMark.otf);
+}
+
+.indesign-logo {
+font-family: Indesign;
+font-size: 5em;
+font-weight:bold;
+}
+
+
+nav ul a, nav .brand-logo {
+  color: #fff;
+
 }
 
 p {
   line-height: 2rem;
 }
 
+
 .sidenav-trigger {
-  color: #26a69a;
+  color: #64ffda;
+  
 }
 
+.sidenav-trigger:hover {
+  color: #b4cada;
+}
+
+.parallax-container-intro {
+  min-height: 960px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container-intro .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container-intro .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
 .parallax-container {
-  min-height: 380px;
+  min-height: 320px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -35,7 +198,7 @@ p {
     top: 40%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 0;
   }
 }
 
@@ -44,6 +207,28 @@ p {
     top: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .icon-block {
   padding: 0 15px;
