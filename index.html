@@ -6,6 +6,7 @@
   <title>Tinta Virtual</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
@@ -17,21 +18,23 @@
 		<div class="navbar-fixed">
 		  <nav class="transparent" role="navigation">
               <div class="nav-wrapper-right container ">
-                <ul class="right hide-on-med-and-down right-nav">
+                <ul class="right hide-on-small-only right-nav">
 				  <li><a class="scrollLink" href="#search"><i class="material-icons">search</i></a></li>
-				  <li><a href="#"><i class="material-icons">book</i></a></li>
+				  <li><a class="scrollLink" href="#index-banner"><i class="material-icons">book</i></a></li>
 				  <li><a class="scrollLink" href="#comment"><i class="material-icons">free_breakfast</i></a></li>
 				  <li><a class="scrollLink" href="#purchase"><i class="material-icons">shopping_cart</i></a></li>
 				  <li><a class="scrollLink" href="#comment"><i class="material-icons">rate_review</i></a></li>
 				  <li><a href="mailto:tintavirtual@ITAcademy.com?Subject=Tinta%20Virtual" target="_top"><i class="material-icons">email</i></a></li>
                 </ul>
-                <ul id="nav-mobile" class="sidenav">
-					<li><a href="#">Navbar Link</a></li>
-				</ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
               </div>
             </nav>
+			 
 		</div>
+		<ul id="nav-mobile" class="sidenav">
+					<li><a class="scrollLink" href="#comment">Navbar Link</a></li>
+				</ul>
         <br><br>
         <h1 class="header center teal-text text-lighten-2 indesign-logo">Tinta Virtual</h1>
         <div class="row center">
@@ -49,22 +52,28 @@
     <div class="section">
  <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
             <h2 class="center brown-text"><a href="#search" class="scrollLink"><i class="material-icons">search</i></a></h2>
-            <h5 class="center">Busca...</h5>
+            <h5 class="center">Busca</h5>
           </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center brown-text"><a href="#comment" class="scrollLink"><i class="material-icons">group</i></a></h2>
-            <h5 class="center">Comenta...</h5>
+            <h2 class="center brown-text"><a href="#comment" class="scrollLink"><i class="material-icons">rate_review</i></a></h2>
+            <h5 class="center">Comenta</h5>
           </div>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center brown-text"><a href="#purchase" class="scrollLink"><i class="material-icons">payment</i></a></h2>
-            <h5 class="center">Compra...</h5>
+            <h2 class="center brown-text"><a href="#purchase" class="scrollLink"><i class="material-icons">shopping_cart</i></a></h2>
+            <h5 class="center">Compra</h5>
+          </div>
+        </div>
+		 <div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center brown-text"><a href="#purchase" class="scrollLink"><i class="material-icons">free_breakfast</i></a></h2>
+            <h5 class="center">Relájate</h5>
           </div>
         </div>
       </div>
@@ -73,8 +82,8 @@
   <div class="parallax-container valign-wrapper" id="search">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"><span class="bgcolor">A modern responsive front-end framework based on Material Design</span></h5>
+        <div class="row center bgcolor">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
       </div>
     </div>
@@ -93,10 +102,10 @@
     </div>
   </div>
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+    <div class="section">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"><span class="bgcolor">A modern responsive front-end framework based on Material Design</span></h5>
+        <div class="row center bgcolor">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
       </div>
     </div>
@@ -117,12 +126,12 @@
    <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light"><span class="bgcolor">A modern responsive front-end framework based on Material Design</span></h5>
+        <div class="row center bgcolor">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="public/image/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="public/image/background4.jpg" alt="Unsplashed background img 4"></div>
   </div>
  <!--   Purchase Section   -->
   <div class="container" id="purchase">
@@ -138,19 +147,24 @@
   </div>
 <!--   Footer Section   -->
   <footer class="page-footer teal">
-    <div class="container">
+    <div class="">
       <div class="row">
-        <div class="col l9 s7">
+        <div class="col l6 s6 offset-l1 offset-s1">
           <h5 class="white-text">Tinta Virtual</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
         </div>
-    
-        <div class="col l2 s2 offset-l1 offset-s2">
+        <div class="col l3 s4 offset-s1 offset-l2">
           <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-          </ul>
+			<div class="inline">
+			  <a href="#" class="fa fa-facebook"></a>
+			  <a href="#" class="fa fa-twitter"></a>
+			  <a href="#" class="fa fa-google"></a>
+			  <a href="#" class="fa fa-linkedin"></a>
+			  <a href="#" class="fa fa-instagram"></a>
+			  <a href="#" class="fa fa-flickr"></a>
+			  <a href="#" class="fa fa-skype"></a>
+			  <a href="#" class="fa fa-rss"></a>
+			</div>
         </div>
       </div>
     </div>
