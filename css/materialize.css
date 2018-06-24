@@ -4364,13 +4364,14 @@ nav .sidenav-trigger {
   float: left;
   position: relative;
   z-index: 1;
-  height: 56px;
+  height: 35px;
   margin: 0 18px;
 }
 
 nav .sidenav-trigger i {
-  height: 56px;
-  line-height: 56px;
+  height: 32px;
+  line-height: 32px;
+  padding:0px 4px;
 }
 
 nav .brand-logo {

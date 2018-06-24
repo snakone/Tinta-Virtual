@@ -152,12 +152,37 @@ p {
 .sidenav-trigger {
   color: #64ffda;
   
+  
 }
 
 .sidenav-trigger:hover {
   color: #b4cada;
 }
 
+
+.backgndbtn {
+	
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius:25px;
+	margin-top:5px;
+
+}
+
+/* Left Nav on Mobile */
+
+#nav-mobile li a:hover i{
+	color:#64ffda;
+	
+}
+
+
+
+/* ScrollSpy */
+
+li a.scrollLink.active{
+	
+	color:#64ffda;
+}
 
 /* Parallax Intro */
 
