@@ -154,7 +154,17 @@ p {
 	border-radius:5px;
 	height:400px;
 	text-align:center;
+
 }
+
+/* Big Button Animation */
+
+#start .icon-block h2 i:hover
+{
+	
+	transform: rotate(-350deg);
+}
+
 
 /* Mobile trigger button */
 
@@ -183,8 +193,6 @@ p {
 	color:#64ffda;
 	
 }
-
-
 
 /* ScrollSpy */
 
