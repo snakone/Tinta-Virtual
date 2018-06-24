@@ -146,16 +146,15 @@ p {
   line-height: 2rem;
 }
 
+/* Search Books Box */
 
-
-/* Book Images */
-
-.book-img {
+.search-box {
 	
-	width:40px;
-	height:300px;
+	border:3px solid #64ffda!important;
+	border-radius:5px;
+	height:400px;
+	text-align:center;
 }
-
 
 /* Mobile trigger button */
 
