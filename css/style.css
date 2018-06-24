@@ -147,6 +147,16 @@ p {
 }
 
 
+
+/* Book Images */
+
+.book-img {
+	
+	width:40px;
+	height:300px;
+}
+
+
 /* Mobile trigger button */
 
 .sidenav-trigger {

@@ -4807,8 +4807,12 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.book-author {
+	font-size: 18px;
 }
 
 .card .card-title.activator {
@@ -4968,7 +4972,7 @@ small {
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #ffab40;
-  margin-right: 24px;
+  margin:0px auto;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
   text-transform: uppercase;
