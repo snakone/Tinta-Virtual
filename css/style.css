@@ -62,19 +62,18 @@
   color: white;
 }
 
-.inline {
+.inline-social-icons {
 	column-count:1;
 	padding-top:5px;
 	padding-left:5px;
-	padding-right:-25px;
-
+	max-width:180px;
 }
  
 /* Background color for Parallax img */
 
 .bgcolor {
 	
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	padding-bottom:8px;
 	border-radius:4px;
 	font-weight:bold;
@@ -94,6 +93,8 @@
 	
 	padding-top:0;
 }
+
+/* 4 big buttons */
 
 .icon-block .material-icons:hover {
 	color:#64ffda;
@@ -146,6 +147,8 @@ p {
 }
 
 
+/* Mobile trigger button */
+
 .sidenav-trigger {
   color: #64ffda;
   
@@ -154,6 +157,9 @@ p {
 .sidenav-trigger:hover {
   color: #b4cada;
 }
+
+
+/* Parallax Intro */
 
 .parallax-container-intro {
   min-height: 960px;
@@ -179,8 +185,30 @@ p {
   #index-banner .section {
     top: 0;
   }
+  
+  .inline-social-icons {
+	column-count:1;
+	padding-top:5px;
+	padding-left:5px;
+	max-width:100px;
+	}
+	
+	  .carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 35em;
+  -webkit-perspective: 350px;
+          perspective: 350px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+	}
 }
 
+
+/* Normal Parallax */
 
 .parallax-container {
   min-height: 320px;
@@ -202,17 +230,18 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+
+.author-facts {
+	
+	font-size:1.1em;
+	font-style:italic;
 }
 
 footer.page-footer {

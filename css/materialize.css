@@ -2898,6 +2898,7 @@ ul.staggered-list li {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
+  
 }
 
 @media only screen and (max-width: 992px) {
@@ -2952,12 +2953,15 @@ ul.staggered-list li {
   .show-on-small {
     display: block !important;
   }
+  
+ 
 }
 
 @media only screen and (min-width: 735px) {
   .show-on-medium-and-up {
     display: block !important;
   }
+  
 }
 
 @media only screen and (max-width: 992px) {
@@ -8403,9 +8407,9 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
-  -webkit-perspective: 500px;
-          perspective: 500px;
+  height: 25em;
+  -webkit-perspective: 350px;
+          perspective: 350px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
@@ -8436,6 +8440,14 @@ input[type=range]::-ms-thumb {
   position: absolute;
   top: 0;
   left: 0;
+  padding:0px;
+}
+
+/* carousel active item */
+
+.carousel-item.active {
+	font-weight:bold;
+	font-size:1.2em;
 }
 
 .carousel.carousel-slider .carousel-item h2 {
@@ -8450,8 +8462,8 @@ input[type=range]::-ms-thumb {
 
 .carousel .carousel-item {
   visibility: hidden;
-  width: 200px;
-  height: 200px;
+  width: 60%;
+  height: 250px;
   position: absolute;
   top: 0;
   left: 0;
@@ -8490,6 +8502,7 @@ input[type=range]::-ms-thumb {
 .carousel.scrolling .carousel-item .materialboxed,
 .carousel .carousel-item:not(.active) .materialboxed {
   pointer-events: none;
+
 }
 
 .tap-target-wrapper {
